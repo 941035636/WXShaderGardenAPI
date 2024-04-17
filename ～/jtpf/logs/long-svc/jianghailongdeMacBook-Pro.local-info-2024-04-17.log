@@ -493,3 +493,147 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /172.
 2024-04-17 10:14:10,016 WARN [RMI TCP Connection(3)-127.0.0.1] o.s.boot.actuate.health.HealthEndpointSupport: Health contributor org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration$AdaptedReactiveHealthContributors$1 (redis) took 10279ms to respond
 2024-04-17 11:13:47,302 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=9m17s39ms).
 2024-04-17 11:21:18,136 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=7m805ms).
+2024-04-17 12:11:40,297 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=9m51s701ms).
+2024-04-17 12:27:35,283 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=15m54s986ms).
+2024-04-17 12:31:09,283 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=1m3s939ms).
+2024-04-17 12:40:17,770 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=6m8s435ms).
+2024-04-17 12:57:42,807 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=15m55s19ms).
+2024-04-17 13:01:28,114 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=3m15s267ms).
+2024-04-17 13:42:26,863 INFO [SpringApplicationShutdownHook] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Unregistering application LONG-SVC with eureka with status DOWN
+2024-04-17 13:42:26,894 INFO [SpringApplicationShutdownHook] io.undertow: stopping server: Undertow - 2.2.20.Final
+2024-04-17 13:42:26,931 INFO [SpringApplicationShutdownHook] io.undertow.servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-17 13:42:27,107 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown initiated...
+2024-04-17 13:42:27,129 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown completed.
+2024-04-17 13:42:27,136 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Shutting down DiscoveryClient ...
+2024-04-17 13:42:27,154 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Completed shut down of DiscoveryClient
+2024-04-17 13:42:32,858 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-17 13:42:32,882 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 33404 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-17 13:42:32,883 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-17 13:42:34,142 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-17 13:42:34,335 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-17 13:42:34,337 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-17 13:42:34,370 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-04-17 13:42:34,733 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-17 13:42:35,177 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-17 13:42:35,193 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-17 13:42:35,193 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2078 ms
+2024-04-17 13:42:35,265 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-17 13:42:35,265 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-17 13:42:35,271 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@549d14fe
+2024-04-17 13:42:37,432 INFO [main] o.s.b.actuate.endpoint.web.EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-17 13:42:37,515 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-17 13:42:37,515 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-17 13:42:37,814 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-04-17 13:42:37,815 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-04-17 13:42:37,815 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-04-17 13:42:37,816 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear EntityHelper entityTableMap cache.
+2024-04-17 13:42:38,139 WARN [main] o.s.b.a.freemarker.FreeMarkerAutoConfiguration: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2024-04-17 13:42:38,342 INFO [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-17 13:42:38,403 WARN [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-17 13:42:38,526 INFO [main] o.s.cloud.netflix.eureka.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-17 13:42:38,546 INFO [main] com.netflix.discovery.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-17 13:42:38,547 INFO [main] com.netflix.discovery.DiscoveryClient: Client configured to neither register nor query for data.
+2024-04-17 13:42:38,551 INFO [main] com.netflix.discovery.DiscoveryClient: Discovery Client initialized at timestamp 1713332558551 with initial instances count: 0
+2024-04-17 13:42:38,556 INFO [main] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Registering application LONG-SVC with eureka with status UP
+2024-04-17 13:42:38,570 INFO [main] org.xnio: XNIO version 3.8.7.Final
+2024-04-17 13:42:38,575 INFO [main] org.xnio.nio: XNIO NIO Implementation Version 3.8.7.Final
+2024-04-17 13:42:38,604 INFO [main] org.jboss.threads: JBoss Threads version 3.1.0.Final
+2024-04-17 13:42:38,640 INFO [main] io.undertow: starting server: Undertow - 2.2.20.Final
+2024-04-17 13:42:38,679 INFO [main] o.s.boot.web.embedded.undertow.UndertowWebServer: Undertow started on port(s) 1001 (http)
+2024-04-17 13:42:38,683 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration: Updating port to 1001
+2024-04-17 13:42:38,951 INFO [main] com.jt.www.CtiApplication: Started CtiApplication in 7.801 seconds (JVM running for 8.656)
+2024-04-17 13:42:39,302 INFO [RMI TCP Connection(5)-127.0.0.1] io.undertow.servlet: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17 13:42:39,303 INFO [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Starting...
+2024-04-17 13:42:39,304 INFO [RMI TCP Connection(5)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-17 13:42:39,308 INFO [RMI TCP Connection(5)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Completed initialization in 4 ms
+2024-04-17 13:42:39,428 INFO [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Start completed.
+2024-04-17 13:42:49,706 WARN [boundedElastic-1] o.s.b.actuate.redis.RedisReactiveHealthIndicator: Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoSubscribeOnCallable] :
+	reactor.core.publisher.Mono.subscribeOn(Mono.java:4554)
+	org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+Error has been observed at the following site(s):
+	*__Mono.subscribeOn ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+	|_     Mono.flatMap ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.doHealthCheck(RedisReactiveHealthIndicator.java:52)
+Original Stack Trace:
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+		at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+		at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+		at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+		at java.util.concurrent.FutureTask.run(FutureTask.java)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.MonoCallableOnAssembly.call(MonoCallableOnAssembly.java:91)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:70)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:571)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:298)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:223)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 18 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /172.24.128.5:6379
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe$2.run(AbstractKQueueChannel.java:563)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:295)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-04-17 13:42:49,712 WARN [RMI TCP Connection(4)-127.0.0.1] o.s.boot.actuate.health.HealthEndpointSupport: Health contributor org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration$AdaptedReactiveHealthContributors$1 (redis) took 10260ms to respond
+2024-04-17 14:33:12,621 INFO [SpringApplicationShutdownHook] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Unregistering application LONG-SVC with eureka with status DOWN
+2024-04-17 14:33:12,641 INFO [SpringApplicationShutdownHook] io.undertow: stopping server: Undertow - 2.2.20.Final
+2024-04-17 14:33:12,651 INFO [SpringApplicationShutdownHook] io.undertow.servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-17 14:33:12,814 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown initiated...
+2024-04-17 14:33:12,826 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown completed.
+2024-04-17 14:33:12,833 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Shutting down DiscoveryClient ...
+2024-04-17 14:33:12,852 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Completed shut down of DiscoveryClient

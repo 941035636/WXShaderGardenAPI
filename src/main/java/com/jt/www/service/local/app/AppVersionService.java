@@ -10,8 +10,6 @@ import java.util.Map;
 
 /**
  * @Author: sunyuan
- * @Date: 2019/4/13 9:29
- * @Version 1.0
  */
 public interface AppVersionService {
 

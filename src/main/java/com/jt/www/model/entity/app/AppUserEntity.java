@@ -30,11 +30,6 @@ public class AppUserEntity {
     @ApiModelProperty(value = "密码")
     private String passwordCode;
 
-//    @ApiModelProperty(value = "更新时间")
-//    @DateTimeFormat(pattern = "yyyy-MM-dd HH-mm-ss")
-//    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-//    private Date updateTime;
-
     @ApiModelProperty(value = "用户code")
     private String usercode;
 

@@ -12,12 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
   * 描述：登录配置
-  * 类名称：WebSecurityConfig
-  * 作者： wangyang  
-  * 版本：1.0 
-  * 修改： 2018/04/26
-  * 创建日期：  
-  * 版权：江泰保险经纪股份有限公司
   */
 @Configuration
 public class WebSecurityConfig extends WebMvcConfigurerAdapter {
