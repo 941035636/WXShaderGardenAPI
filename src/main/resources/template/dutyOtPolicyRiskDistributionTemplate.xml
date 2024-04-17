@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+	<DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+		<Author>yang</Author>
+		<LastAuthor>yang</LastAuthor>
+		<Created>2020-01-10T02:22:54Z</Created>
+		<LastSaved>2020-01-10T02:51:43Z</LastSaved>
+		<Version>16.00</Version>
+	</DocumentProperties>
+	<OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+		<AllowPNG />
+		<PixelsPerInch>96</PixelsPerInch>
+	</OfficeDocumentSettings>
+	<ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+		<WindowHeight>21140</WindowHeight>
+		<WindowWidth>38400</WindowWidth>
+		<WindowTopX>28800</WindowTopX>
+		<WindowTopY>-1180</WindowTopY>
+		<ProtectStructure>False</ProtectStructure>
+		<ProtectWindows>False</ProtectWindows>
+	</ExcelWorkbook>
+	<Styles>
+		<Style ss:ID="Default" ss:Name="Normal">
+			<Alignment ss:Vertical="Bottom" />
+			<Borders />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="12" ss:Color="#000000" />
+			<Interior />
+			<NumberFormat />
+			<Protection />
+		</Style>
+		<Style ss:ID="s63">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Bottom" />
+			<Font ss:FontName="宋体" x:CharSet="134" ss:Size="20" ss:Color="#000000" />
+		</Style>
+		<Style ss:ID="s64">
+			<Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+		</Style>
+		<Style ss:ID="s65">
+			<Alignment ss:Horizontal="Right" ss:Vertical="Bottom" />
+		</Style>
+	</Styles>
+	<Worksheet ss:Name="工作表1">
+		<Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="15"
+			x:FullColumns="1" x:FullRows="1" ss:DefaultColumnWidth="65"
+			ss:DefaultRowHeight="15">
+			<Column ss:Width="153" ss:Span="1" />
+			<Column ss:Index="3" ss:Width="57" />
+			<Row ss:AutoFitHeight="0" ss:Height="26">
+				<Cell ss:MergeAcross="2" ss:StyleID="s63">
+					<PhoneticText xmlns="urn:schemas-microsoft-com:office:excel">chu jingsheguo nei shetou baofang
+						anfen bu</PhoneticText>
+					<Data ss:Type="String">出境社投保方案分布</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell ss:StyleID="s64">
+					<PhoneticText xmlns="urn:schemas-microsoft-com:office:excel">mei cishi guze renxian ewan yuan
+					</PhoneticText>
+					<Data ss:Type="String">每次事故责任限额（万元）</Data>
+				</Cell>
+				<Cell ss:StyleID="s64">
+					<PhoneticText xmlns="urn:schemas-microsoft-com:office:excel">quan nianlei jize renxian ewan
+						yuan</PhoneticText>
+					<Data ss:Type="String">全年累计责任限额（万元）</Data>
+				</Cell>
+				<Cell ss:StyleID="s64">
+					<PhoneticText xmlns="urn:schemas-microsoft-com:office:excel">tou bao shu liang</PhoneticText>
+					<Data ss:Type="String">投保数量</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">400</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">600</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_400_600}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">800</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_500_800}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">800</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">1200</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_800_1200}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">1000</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">1500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_1000_1500}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">1500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">2500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_1500_2500}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">2000</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">3500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_2000_3500}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">600</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">600</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_600_600}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">800</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">800</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_800_800}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">1200</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">1200</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_1200_1200}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">1500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">1500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_1500_1500}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">2500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">2500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_2500_2500}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell>
+					<Data ss:Type="Number">3500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">3500</Data>
+				</Cell>
+				<Cell>
+					<Data ss:Type="Number">${out_3500_3500}</Data>
+				</Cell>
+			</Row>
+			<Row ss:AutoFitHeight="0">
+				<Cell ss:StyleID="s65">
+					<PhoneticText xmlns="urn:schemas-microsoft-com:office:excel">he ji</PhoneticText>
+					<Data ss:Type="String">合计</Data>
+				</Cell>
+				<Cell ss:Index="3" ss:Formula="=SUM(R[-12]C:R[-1]C)">
+					<Data ss:Type="Number">1200</Data>
+				</Cell>
+			</Row>
+		</Table>
+		<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+			<PageSetup>
+				<Header x:Margin="0.3" />
+				<Footer x:Margin="0.3" />
+				<PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7"
+					x:Top="0.75" />
+			</PageSetup>
+			<Unsynced />
+			<Print>
+			</Print>
+			<PageLayoutZoom>0</PageLayoutZoom>
+			<Selected />
+			<Panes>
+				<Pane>
+					<Number>3</Number>
+					<ActiveRow>8</ActiveRow>
+					<ActiveCol>1</ActiveCol>
+					<RangeSelection>R9C2:R14C2</RangeSelection>
+				</Pane>
+			</Panes>
+			<ProtectObjects>False</ProtectObjects>
+			<ProtectScenarios>False</ProtectScenarios>
+		</WorksheetOptions>
+	</Worksheet>
+</Workbook>

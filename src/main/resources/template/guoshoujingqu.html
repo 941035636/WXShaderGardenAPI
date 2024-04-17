@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<title></title>
+<style type="text/css">
+    .body {padding: 30px;background:#ffffff;}
+    body, dl, dd, h1, h2, h3, h4, h5, h6, p, form,ul,li,ol,input,embed{margin:0;padding:0;}
+    .inner{width:900px;margin:0 auto;font-family:"5FAE8F6F96C59ED1"; box-sizing: border-box;}
+    .bg_4{background:#fff; padding-bottom: 80px; font-family: "宋体";font-size: 18px;}
+    .pay_table_box {padding: 0 100px; padding-top:80px;height: 50px; display: flex; justify-content: space-between;}
+    .pay_table_box p {width: 300px; height: 50px;}
+    .pay_table_box p img{width: 100%;}
+    table{border-collapse: collapse; border-spacing: 0;}
+    .FLEX1 {display: flex; flex: 1;}
+    .STYLE1 {font-size: 24px;font-weight: bold;font-family: "宋体";line-height: 45px;}
+    .STYLE2 {font-size: 18px;font-family: "宋体";}
+    .STYLE3 {font-family: "宋体";font-size: 18px;line-height: 25px; }
+    .STYLE4 {width:200px; border-right: 1px solid #333333; text-align: center; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0;}
+    .STYLE5 {border-bottom: 1px solid #333333;border-right: 1px solid #333333;}
+    .STYLE6 {width:150px;display: inline-block; text-align: center; display:flex; flex-direction: column; justify-content: center; border-right: 1px solid #333333;flex-shrink: 0;}
+    .STYLE8 {width:200px;border-right: 1px solid #333333; border-bottom: 1px solid #333333;text-align: center; display: flex; flex-direction: column; justify-content: center; flex-shrink: 0; flex-shrink: 0;}
+    .STYLE9 {line-height: 40px;border-bottom:1px solid #333333;display: flex;}
+    .STYLE10 {width: 200px;display: inline-block; text-align: center; border-right: 1px solid #333333; flex-shrink: 0;}
+    .STYLE11 {width: 500px; border-right: 1px solid #333333; flex-shrink: 0;}
+    .STYLE12 {width: 200px;border-right: 1px solid #333333;text-align: center; display: flex; flex-direction: column; justify-content: center; border-bottom: 1px solid #333333;}
+    .STYLE14 {width: 200px;border-right: 1px solid #333333;text-align: center; line-height: 40px;border-bottom: 1px solid #333333;}
+    .STYLE15 {padding-left: 5px;}
+    .STYLE16 {padding-left: 50px;}
+    .STYLE17 {text-align: right; padding-right: 100px;line-height: 35px;}
+    .STYLE18 {text-align: right; padding-right: 100px;line-height: 35px;}
+    .STYLE19 {padding: 0 10px;}
+    .STYLE20 {width: 525px; padding: 0 10px;}
+    .STYLE21 {width: 176px; padding: 0 10px;}
+    .STYLE22 {text-align: left;}
+    .TABLE {margin-top: 50px; }
+    .ROW1 {display: flex;border-bottom: 1px solid #333333; border: 2px solid #333333; border-bottom: none;}
+    .ROW2 {display: flex; border: 2px solid #333333; border-bottom: none; border-top: none;}
+    .ROW3 {display: flex; border: 2px solid #333333; border-bottom: none; border-top: none;}
+    .ROW4 {height: 50px; border-bottom: 1px solid #333333;}
+    .COL1 {width:695px;display: flex; flex-direction: column;}
+    .COL1 p {line-height: 40px; display: flex;}
+    .COL2 {flex: 1;}
+    .COL3 {display: flex;}
+    .COL4 {display: flex;}
+    .COL5 {display: flex; flex-wrap: wrap;}
+    .COL6 {display: flex;}
+    .COL7 {flex: 1;}
+    .COL8 {flex: 1; border-bottom: 1px solid #333333;}
+    .COL9 {flex: 1;line-height: 40px; padding: 0 10px;border-bottom: 1px solid #333333;}
+    .COL10 {flex: 1; display: flex; line-height: 40px;padding: 0 10px;border-bottom: 1px solid #333333;}
+    .COL11 {flex: 1;line-height: 30px;padding: 0 10px;}
+    .COL3 p {border-right: 1px solid #333333;width:181px;text-align: center;}
+    .COL3 p span {padding-left: 5px;}
+    .COL4 p {border-right: 1px solid #333333;width:162px;text-align: center;}
+    .COL4 p span {padding-left: 5px;}
+    .COL5 p {padding: 0 10px;}
+    .COL5 p span {padding-left: 5px;}
+    .COL6 input { border: none; border-bottom: 1px solid #333333; margin-left: 20px;}
+    .COL7 span {padding: 0 10px; flex-wrap: wrap;}
+    .COL8 p {padding: 0 10px; line-height: 30px;}
+    .COL10 .text_input {border: none; border-bottom: 1px solid #333333;}
+    .NOBORDER {border: 0;}
+    .NOBORDER_RIGTH {border-right: none;}
+    .BORDER_TOP {border-top: 1px solid #333333;}
+    .BORDER_BOTTOM {border-bottom: 2px solid #333333;}
+</style>
+
+</head>
+<body class="body">
+<div class="wrap_bg">
+    <div class="inner bg_4">
+        <div class="pay_table_box">
+            <p><img src="http://gw.jiangtai.com/res-svc/res/v3/download?fileId=3792953376528149643&applicationName=cti-svc&businessTypeCode=A101&free=1" alt=""></p>
+            <p><img src="http://gw.jiangtai.com/res-svc/res/v3/download?fileId=3792934220974030426&applicationName=cti-svc&businessTypeCode=A101&free=1" alt=""></p>
+        </div>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr><td height="35" colspan="2" align="center"><span class="STYLE1">旅游景区安全生产责任保险投保单</span></td></tr>
+            <tr><td align="right"><p><span class="STYLE2">No：${(applicationFormCode)!}</span></p></td></tr>
+            <tr><td colspan="2" align="left"><p><span class="STYLE3">　请您在投保前务必仔细阅读相关保险条款，特别注意<strong>保险责任、责任免除、投保人及被保险人义务、赔偿处理</strong>等内容。为保障您的合法权益，请您如实、完整、准确地填写本投保单。投保信息如有变动请及时办理变更手续。<br></span></p></td></tr>
+            </tbody>
+        </table>
+        <div class="TABLE">
+            <div class="ROW1">
+                <div class="STYLE4">投保人</div>
+                <div class="COL1">
+                    <div class="FLEX1">
+                        <p class="STYLE5"><span class="STYLE6">名称</span><span class="STYLE21">${holder.corporation.name}</span></p>
+                        <p class="STYLE5 NOBORDER_RIGTH"><span class="STYLE6">统一社会信用代码</span><span class="STYLE21">${holder.corporation.threeInOneCode}</span></p>
+                    </div>
+                    <div class="FLEX1">
+                        <p class="STYLE7">
+                            <span class="STYLE6">地址</span>
+                            <span class="STYLE20">${provinceName}${cityName}${countyName}${holder.corporation.location}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ROW1 BORDER_TOP">
+                <div class="STYLE4">被保险人</div>
+                <div class="COL1">
+                    <div class="FLEX1">
+                        <p class="STYLE5"><span class="STYLE6">名称</span><span class="STYLE21">${insuredList[0].corporation.name}</span></p>
+                        <p class="STYLE5 NOBORDER_RIGTH"><span class="STYLE6">统一社会信用代码</span><span class="STYLE21">${insuredList[0].corporation.threeInOneCode}</span></p>
+                    </div>
+                    <div class="FLEX1">
+                        <p class="STYLE7">
+                            <span class="STYLE6">地址</span>
+                            <span class="STYLE20">${provinceName}${cityName}${countyName}${insuredList[0].corporation.location}</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ROW2 BORDER_TOP">
+                <div class="STYLE8">景区基本信息</div>
+                <div class="COL2">
+                    <div class="STYLE9"><span class="STYLE6">景区名称</span><span class="STYLE19">
+							<#list holder.corporation.extendList as item>
+                                <#if "${item.key}"=="S_I_000330">
+                                    ${item.value}
+                                </#if>
+                            </#list>
+					</span></div>
+                    <div class="STYLE9"><span class="STYLE6">景区地址</span><span class="STYLE19">
+					<#list holder.corporation.extendList as item><#if "${item.key}"=="S_I_000385">${item.value}</#if></#list><#list holder.corporation.extendList as item><#if "${item.key}"=="S_I_000387">${item.value}</#if></#list><#list holder.corporation.extendList as item><#if "${item.key}"=="S_I_000389">${item.value}</#if></#list><#list holder.corporation.extendList as item><#if "${item.key}"=="S_I_000329">${item.value}</#if></#list>
+				</span></div>
+                    <div class="STYLE9">
+                        <span class="STYLE6">景区类型</span>
+                        <div class="COL3">
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000331">
+                                                <#if "${item.value}"=="自然景区">
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>自然景区</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000331">
+                                                <#if "${item.value}"=="人文景区">
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>人文景区</span></p>
+                            <p style="border: 0;"><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000331">
+                                                <#if "${item.value}"=="游乐园">
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>游乐园</span></p>
+                        </div>
+                    </div>
+                    <div class="STYLE9">
+                        <span class="STYLE10">旅游景区质量等级</span>
+                        <div class="COL4">
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000332">
+                                                <#if "${item.value}"=="AAAAA级">
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>AAAAA级</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000332">
+                                                <#if "${item.value}"=="AAAA级">
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>AAAA级</span></p>
+                            <p style="border: 0;"><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000332">
+                                                <#if "${item.value}"=="AAA级或其他">
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>AAA级或其他</span></p>
+                        </div>
+                    </div>
+                    <div class="STYLE9">
+                        <span class="STYLE10" style="line-height: 80px;">高风险项目类型</span>
+                        <div class="COL5">
+                            <p><input type="checkbox" name="c"
+                                        <#assign flag1 = "checked" />
+                                        <#list riskList as item>
+                                            <#if "${item.riskCode}"=="20XZ704229">
+                                                <#assign flag1 = "unchecked" />
+                                            </#if>
+                                        </#list>
+                                        ${flag1}
+                                /><span>无</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("滑雪")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>滑雪</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("飞机")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>高空项目</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("潜水")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>水上项目</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("蹦极")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>蹦极</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("攀岩")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>攀岩</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("地穴探险")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>地穴探险</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("赛车")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>赛车</span></p>
+                            <p><input type="checkbox" name="c"
+                                        <#list holder.corporation.extendList as item>
+                                            <#if "${item.key}"=="S_I_000333">
+                                                <#if "${item.value}"?contains("骑马") || "${item.value}"?contains("滑道") || "${item.value}"?contains("其他")>
+                                                    checked
+                                                </#if>
+                                            </#if>
+                                        </#list>
+                                /><span>其他</span></p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="STYLE9">
+                        <span class="STYLE10">年度接待人次量</span>
+                        <div class="COL6"><p><span><#list holder.corporation.extendList as item><#if "${item.key}"=="S_I_000321">${item.value}</#if></#list>人</span></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ROW3">
+                <div class="STYLE12">主险</div>
+                <div class="COL7">
+                    <div class="STYLE9"><span class="STYLE11">第三者累计责任限额 （元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR560265">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">第三者每次事故责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR560265">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">第三者每人人身伤亡责任限额 （元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR605796">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">第三者每次事故每人医疗费用责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR605796">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">第三者每次事故每人财产损失责任限额（元）</span><span>50000</span></div>
+                    <div class="STYLE9"><span class="STYLE11">第三者每次事故每人精神损害抚慰金责任限额（元）</span><span>50000</span></div>
+                    <div class="STYLE9"><span class="STYLE11">从业人员累计责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR747791">
+                                            ${(item2.dutyLimits[0].value?number * insuredList[0].insuranceObjectVos?size)?c}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">从业人员每次事故责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR747791">
+                                            ${(item2.dutyLimits[0].value?number * insuredList[0].insuranceObjectVos?size)?c}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">从业人员每次事故每人责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR747791">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">从业人员每次事故每人医疗费用责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR747791">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">从业人员每次事故每人精神损害抚慰金责任限额（元）</span><span>
+                        <#list riskList as item1>
+                            <#if "${item1.riskCode}"=="20XZ719516">
+                                <#list item1.dutyList as item2>
+                                    <#if "${item2.dutyCode}"=="20ZR747791">
+                                        50000
+                                    </#if>
+                                </#list>
+                            </#if>
+                        </#list>
+                    </span></div>
+                    <div class="STYLE9"><span class="STYLE11">累计法律费用责任限额（元）</span>
+                        <span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR560265">
+                                            ${(item2.dutyLimits[0].value?number * 0.1)?c}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+                        </span>
+                    </div>
+                </div>
+                </div>
+                <div class="ROW4"></div>
+				<div class="ROW3">
+					<div class="STYLE12"></div>
+					<div class="COL7">
+                    <div class="STYLE9"><span class="STYLE11">每次事故法律费用责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR560265">
+                                            ${(item2.dutyLimits[0].value?number * 0.1)?c}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">每次事故及累计鉴定费用责任限额</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR560265">
+                                            ${(item2.dutyLimits[0].value?number * 0.05)?c}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">每次事故及累计抢险救援及医疗救护费用责任限额</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ719516">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR560265">
+                                            ${(item2.dutyLimits[0].value?number * 0.1)?c}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">免赔额（率）</span><span>财产损失200元，其他无免赔。</span></div>
+                </div>
+            </div>
+            </div>
+            <div class="ROW3">
+                <div class="STYLE12">附加险</div>
+                <div class="COL7">
+                    <div class="STYLE9"><span class="STYLE11">附加高风险项目责任保险条款每次事故及累计责任限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ704229">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR951861">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">附加无过错责任保险条款每次事故每人赔偿限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ310857">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR933973">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">附加补充雇主责任保险条款每人赔偿限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ439339">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR793411">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                    <div class="STYLE9"><span class="STYLE11">附加无责救援费用保险条款每次事故赔偿限额（元）</span><span>
+							<#list riskList as item1>
+                                <#if "${item1.riskCode}"=="20XZ938515">
+                                    <#list item1.dutyList as item2>
+                                        <#if "${item2.dutyCode}"=="20ZR989529">
+                                            ${item2.dutyLimits[0].value}
+                                        </#if>
+                                    </#list>
+                                </#if>
+                            </#list>
+</span></div>
+                </div>
+            </div>
+            <div class="ROW3">
+                <div class="STYLE12">总保险费</div>
+                <div class="COL8">
+                    <p class="STYLE13">人民币：（大写）${afterPremUpper}</p>
+                    <p style="padding-left: 75px;">（小写）${afterPrem}元</p>
+                </div>
+            </div>
+            <div class="ROW3">
+                <div class="STYLE14">保险期间</div>
+                <div class="COL9">自${startDate?substring(0,4)}年${startDate?substring(5,7)}月${startDate?substring(8,10)}日零时起，到${endDate?substring(0,4)}年${endDate?substring(5,7)}月${endDate?substring(8,10)}日二十四时止。</div>
+            </div>
+            <div class="ROW3">
+                <div class="STYLE14">保险合同争议解决方式选择</div>
+                <div class="COL10">
+                    <p><input type="checkbox" name="c"/><span class="STYLE15">提交</span><input type="text" name="c" class="text_input" /><span>仲裁委员会仲裁；</span></p>
+                    <p class="STYLE16"><input type="checkbox" name="c"/><span class="STYLE15">诉讼</span></p>
+                </div>
+            </div>
+            <div class="ROW3">
+                <div class="STYLE14"><strong>索赔提示</strong></div>
+                <div class="COL10"><p><strong>为确保您的权限不受损失，请您务必在发生事故后及时拨打400-616-1188客服专线报案。</strong></p></div>
+            </div>
+            <div class="ROW3 BORDER_BOTTOM">
+                <div class="STYLE12" style="border-bottom: none;"><strong>索赔提示</strong></div>
+                <div class="COL11">
+                    <p class="STYLE22"><strong>投保人声明：经纪人和保险人已将保险条款的内容，尤其是免除保险人责任、投保人及被保险人义务、赔偿处理的条款的内容和法律后果 ，向本人进行了明确说明。本人对保险条款已认真阅读并充分理解。上述所填写的内容均属实，同意以此投保单作为订立保险合同的依据。</strong></p>
+                    <p class="STYLE17"><span>投保人签章：</span><span></span></p>
+                    <p class="STYLE18"><span>${.now?string["yyyy"]}年${.now?string["MM"]}月${.now?string["dd"]}日</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html>

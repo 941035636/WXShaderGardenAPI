@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jt.www.dao.mapper.app.AppVersionMapper">
+    <!-- app版本添加 -->
+    <insert id="addAppVersion" parameterType="com.jt.www.model.entity.app.AppVersionEntity">
+        INSERT INTO app_version(
+        id,
+        version_code ,
+        download_url ,
+        update_log ,
+        update_time ,
+        is_install ,
+        app_type ,
+        file_size
+        ) VALUES
+          ( #{Id},
+            #{versionCode},
+            #{downloadUrl},
+            #{updateLog},
+            #{updateTime},
+            #{isInstall},
+            #{appType},
+            #{fileSize} )
+    </insert>
+    <!--====================================================================================================-->
+
+    <!-- APP系统查询最新的版本 -->
+    <select id="selectAppVersion"  resultType="com.jt.www.model.entity.app.AppVersionEntity">
+        SELECT id ,download_url,version_code, is_install, version_code, app_type FROM  app_version  WHERE app_type = #{appType} ORDER BY version_code DESC limit 1
+    </select>
+
+    <!-- APP系统查询所有版本信息 -->
+    <select id="selectAppVersionList" resultType="com.jt.www.model.entity.app.AppVersionEntity">
+        SELECT
+            id,
+            version_code,
+            download_url,
+            update_log,
+            update_time,
+            is_install,
+            app_type,
+            file_size
+        FROM app_version
+        WHERE 1=1
+        <if test="null != appType and ''!= appType">
+          AND app_type = #{appType}
+        </if>
+        order by version_code DESC
+    </select>
+
+    <!-- APP版本id查询信息 -->
+    <select id="selectAppVersionId" parameterType="java.lang.Integer" resultType="com.jt.www.model.entity.app.AppVersionEntity">
+        SELECT download_url,update_log, is_install, version_code, app_type,file_size FROM  app_version  WHERE id =#{id}
+    </select>
+
+    <!-- 修改App版本信息-->
+    <update id="updateAppVersion" parameterType="com.jt.www.model.entity.app.AppVersionEntity">
+        update app_version
+        <trim prefix="SET" suffixOverrides="," >
+            <if test="null !=  versionCode and ''!= versionCode">
+                version_code=#{versionCode},
+            </if>
+            <if test="null != downloadUrl and ''!=downloadUrl">
+                download_url= #{downloadUrl},
+            </if>
+            <if test="null != updateLog and ''!=updateLog">
+                update_log=#{updateLog},
+            </if>
+            <if test="null != isInstall and ''!=isInstall">
+                is_install=#{isInstall},
+            </if>
+            <if test="null != updateTime ">
+                update_time=#{updateTime},
+            </if>
+            <if test="null != appType and ''!=appType">
+                app_type=#{appType},
+            </if>
+            <if test="null != fileSize and ''!=fileSize">
+                file_size=#{fileSize}
+            </if>
+        </trim>
+        where id = #{id}
+    </update>
+
+
+     <delete id="deleteAppVersion" >
+             delete from app_version where id=#{id};
+     </delete>
+
+     <select id="getAndroidDownLoadUrl" resultType="String">
+         select download_url from app_version where app_type=#{appType} ORDER BY version_code DESC limit 1
+     </select>
+    
+     <select id="appSql" parameterType="java.lang.String">
+         ${sql}
+     </select>
+</mapper>
+

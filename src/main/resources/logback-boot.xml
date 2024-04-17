@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <springProperty scope="context" name="APP_NAME" source="spring.application.name" defaultValue="cti-svc" />
+    <springProperty scope="context" name="LOG_DIR" source="jtpf.logging.dir" defaultValue="/jtpf/logs/cti-svc" />
+    <springProperty scope="context" name="LOGGER_NAME" source="jtpf.logging.name" defaultValue="jtpf"/>
+    <springProperty scope="context" name="LOG_LEVEL" source="jtpf.logging.level" defaultValue="INFO"/>
+    <springProperty scope="context" name="LOG_PATTERN" source="jtpf.logging.pattern" defaultValue="%d %level [%thread] %logger{48}: %msg%n" />
+    <springProperty scope="context" name="LOGSTASH_DESTINATIONS" source="jtpf.logging.logstash.destinations" defaultValue="127.0.0.1:1234" />
+
+    <appender name="DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${HOSTNAME}-debug-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
+
+    <appender name="INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${HOSTNAME}-info-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <appender name="WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${HOSTNAME}-warn-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+    </appender>
+
+    <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${HOSTNAME}-error-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <keepAliveDuration>5 minutes</keepAliveDuration>
+        <destination>${LOGSTASH_DESTINATIONS}</destination>
+        <reconnectionDelay>1 second</reconnectionDelay>
+        <connectionStrategy>
+            <roundRobin>
+                <connectionTTL>5 minutes</connectionTTL>
+            </roundRobin>
+        </connectionStrategy>
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" />
+    </appender>
+
+    <logger name="${LOGGER_NAME}" level="${LOG_LEVEL}" additivity="false" >
+        <appender-ref ref="DEBUG" />
+        <appender-ref ref="INFO" />
+        <appender-ref ref="WARN" />
+        <appender-ref ref="ERROR" />
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="LOGSTASH" />
+    </logger>
+
+    <root additivity="false">
+        <appender-ref ref="DEBUG" />
+        <appender-ref ref="INFO" />
+        <appender-ref ref="WARN" />
+        <appender-ref ref="ERROR" />
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="LOGSTASH" />
+    </root>
+
+</configuration>

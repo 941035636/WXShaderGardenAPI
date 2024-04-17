@@ -1,0 +1,157 @@
+spring:
+  cache:
+    ehcache:
+      config:
+  http:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+      ##解决网关文件上传乱码问题
+    encoding:
+      force: true
+      charset: utf-8
+      enabled: true
+  servlet:
+    multipart:
+      # 根据实际需求作调整
+      # 默认最大上传文件大小为1M，单个文件大小
+      max-file-size: 100MB
+      # 默认最大请求大小为10M，总上传的数据大小
+      max-request-size: 100MB
+  application:
+    name: long-svc
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/shareCountryside?allowMultiQueries=true&characterEncoding=utf-8
+          &useSSL=false&serverTimezone=GMT%2B8
+    hikari:
+      username: root
+      password: Jhl,05060011
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      ##连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count)
+      maximum-pool-size: 50
+      minimum-idle: 10
+      ## 一个连接idle状态的最大时长（毫秒），超时则被释放（retired），缺省:10分钟
+      #idle-timeout: 600000
+      ##等待连接池分配连接的最大时长（毫秒），超过这个时长还没可用的连接则发生SQLException， 缺省:30秒
+      #connection-timeout: 30000
+      ##一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒，参考MySQL wait_timeout参数（show variables like '%timeout%';）
+      #max-lifetime: 600000
+      pool-name: dbcp1
+      connection-test-query: select 1
+
+  mvc:
+    static-path-pattern: /**
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+  redis:
+    host: 172.24.128.5
+    port: 6379
+    password: crs-95idx3hg:JTdevTEST(!13)8E
+    timeout: 3000
+    pool:
+      # 连接池中的最小空闲连接
+      min-idle: 1
+      # 连接池中的最大空闲连接
+      max-idle: 10
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: 10000
+      # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 20
+
+  main:
+    allow-circular-references: true
+
+
+mybatis:
+  mapper-locations: classpath:com/jt/www/dao/mapping/*.xml
+  #  type-aliases-package: com.insurance.modules.oldwork.model
+  configuration:
+    #开启驼峰命名法转换字段支持,用于对象关系绑定
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+
+#通用mapper
+mapper:
+  mappers: tk.mybatis.mapper.common.BaseMapper
+  not-empty: false
+  identity: MYSQL
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: false
+  supportMethodsArguments: true
+  params: count=countSql
+  PageRowBounds: true
+  pageSizeZero: true
+
+server:
+  port: 1000
+  undertow:
+    accessLog:
+      enabled: true
+      pattern: "%t %a \"%r\" %s (%D ms)"
+      dir: ～/jtpf/logs/${spring.application.name}
+
+jtpf:
+  url: http://long-svc
+  logging:
+    level: info
+    pattern: "%d %level [%thread] %logger{48}: %msg%n"
+    dir: ～/jtpf/logs/${spring.application.name}
+    name: com.jt.www
+    logstash:
+      destinations: "172.16.7.127:35610"
+
+logging:
+  config: classpath:logback-boot.xml
+  level:
+    root: INFO
+## 线上需要关闭，配置为true是为了在本地环境执行生成swagger文档
+swagger:
+  enable: true
+
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+
+##熔断
+feign:
+  client:
+      config:
+        default:
+          readTimeout: 60000
+        statistic-svc:
+          readTimeout: 180000
+  hystrix:
+    enabled: false
+
+#熔断时间设置
+hystrix:
+  threadpool:
+    default:
+      coreSize: 10 ##并发执行的最大线程数，默认10
+      maxQueueSize: 200 ##BlockingQueue的最大队列数
+      queueSizeRejectionThreshold: 200 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 180000
