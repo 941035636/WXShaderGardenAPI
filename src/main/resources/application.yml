@@ -93,7 +93,7 @@ pagehelper:
   pageSizeZero: true
 
 server:
-  port: 1000
+  port: 1001
   undertow:
     accessLog:
       enabled: true
