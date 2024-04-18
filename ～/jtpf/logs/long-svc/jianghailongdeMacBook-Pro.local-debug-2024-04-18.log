@@ -1,0 +1,827 @@
+2024-04-18 08:53:01,412 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 08:53:01,442 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 42224 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 08:53:01,443 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 08:53:01,771 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+2024-04-18 08:53:01,777 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 08:53:01,797 ERROR [main] org.springframework.boot.SpringApplication: Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.jt.www.CtiApplication.main(CtiApplication.java:29)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 13 common frames omitted
+2024-04-18 08:53:12,004 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 08:53:12,029 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 42235 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 08:53:12,030 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 08:53:12,405 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+2024-04-18 08:53:12,412 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 08:53:12,433 ERROR [main] org.springframework.boot.SpringApplication: Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.jt.www.CtiApplication.main(CtiApplication.java:29)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 13 common frames omitted
+2024-04-18 08:53:26,966 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 08:53:26,991 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 42241 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 08:53:26,992 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 08:53:27,365 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+2024-04-18 08:53:27,376 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 08:53:27,396 ERROR [main] org.springframework.boot.SpringApplication: Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.jt.www.CtiApplication.main(CtiApplication.java:29)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 13 common frames omitted
+2024-04-18 08:54:44,254 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 08:54:44,280 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 42276 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 08:54:44,281 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 08:54:44,666 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+2024-04-18 08:54:44,675 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 08:54:44,694 ERROR [main] org.springframework.boot.SpringApplication: Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.jt.www.CtiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at com.jt.www.CtiApplication.main(CtiApplication.java:29)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userInfoController' for bean class [com.jt.www.controller.verificationCode.UserInfoController] conflicts with existing, non-compatible bean definition of same name and class [com.jt.www.controller.userInfo.UserInfoController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 13 common frames omitted
+2024-04-18 08:55:55,235 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 08:55:55,261 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 42463 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 08:55:55,263 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 08:55:56,460 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 08:55:56,650 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 08:55:56,651 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 08:55:56,690 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+2024-04-18 08:55:57,042 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 08:55:57,433 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 08:55:57,447 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 08:55:57,447 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1968 ms
+2024-04-18 08:55:57,566 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 08:55:57,567 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 08:55:57,573 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@72e36677
+2024-04-18 08:55:59,410 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 08:56:00,679 INFO [main] o.s.b.actuate.endpoint.web.EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-18 08:56:00,768 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 08:56:00,769 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 08:56:01,057 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-04-18 08:56:01,058 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-04-18 08:56:01,058 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-04-18 08:56:01,058 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear EntityHelper entityTableMap cache.
+2024-04-18 08:56:01,367 WARN [main] o.s.b.a.freemarker.FreeMarkerAutoConfiguration: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2024-04-18 08:56:02,582 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 08:56:02,634 INFO [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-18 08:56:02,722 WARN [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-18 08:56:02,848 INFO [main] o.s.cloud.netflix.eureka.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-18 08:56:02,866 INFO [main] com.netflix.discovery.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-18 08:56:02,867 INFO [main] com.netflix.discovery.DiscoveryClient: Client configured to neither register nor query for data.
+2024-04-18 08:56:02,871 INFO [main] com.netflix.discovery.DiscoveryClient: Discovery Client initialized at timestamp 1713401762870 with initial instances count: 0
+2024-04-18 08:56:02,877 INFO [main] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Registering application LONG-SVC with eureka with status UP
+2024-04-18 08:56:02,888 INFO [main] org.xnio: XNIO version 3.8.7.Final
+2024-04-18 08:56:02,893 INFO [main] org.xnio.nio: XNIO NIO Implementation Version 3.8.7.Final
+2024-04-18 08:56:02,910 INFO [main] org.jboss.threads: JBoss Threads version 3.1.0.Final
+2024-04-18 08:56:02,931 INFO [main] io.undertow: starting server: Undertow - 2.2.20.Final
+2024-04-18 08:56:02,958 INFO [main] o.s.boot.web.embedded.undertow.UndertowWebServer: Undertow started on port(s) 1001 (http)
+2024-04-18 08:56:02,960 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration: Updating port to 1001
+2024-04-18 08:56:03,966 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 08:56:04,272 INFO [main] com.jt.www.CtiApplication: Started CtiApplication in 10.698 seconds (JVM running for 11.368)
+2024-04-18 08:56:04,540 INFO [RMI TCP Connection(2)-127.0.0.1] io.undertow.servlet: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 08:56:04,541 INFO [RMI TCP Connection(2)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-18 08:56:04,541 INFO [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Starting...
+2024-04-18 08:56:04,549 INFO [RMI TCP Connection(2)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Completed initialization in 7 ms
+2024-04-18 08:56:04,685 INFO [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Start completed.
+2024-04-18 08:56:14,967 WARN [boundedElastic-1] o.s.b.actuate.redis.RedisReactiveHealthIndicator: Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoSubscribeOnCallable] :
+	reactor.core.publisher.Mono.subscribeOn(Mono.java:4554)
+	org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+Error has been observed at the following site(s):
+	*__Mono.subscribeOn ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+	|_     Mono.flatMap ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.doHealthCheck(RedisReactiveHealthIndicator.java:52)
+Original Stack Trace:
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+		at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+		at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+		at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+		at java.util.concurrent.FutureTask.run(FutureTask.java)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.MonoCallableOnAssembly.call(MonoCallableOnAssembly.java:91)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:70)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:571)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:298)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:223)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 18 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /172.24.128.5:6379
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe$2.run(AbstractKQueueChannel.java:563)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:295)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-04-18 08:56:14,973 WARN [RMI TCP Connection(3)-127.0.0.1] o.s.boot.actuate.health.HealthEndpointSupport: Health contributor org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration$AdaptedReactiveHealthContributors$1 (redis) took 10261ms to respond
+2024-04-18 09:00:05,572 WARN [dbcp1 housekeeper] com.zaxxer.hikari.pool.HikariPool: dbcp1 - Thread starvation or clock leap detected (housekeeper delta=3m30s776ms).
+2024-04-18 09:00:05,626 INFO [SpringApplicationShutdownHook] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Unregistering application LONG-SVC with eureka with status DOWN
+2024-04-18 09:00:05,639 INFO [SpringApplicationShutdownHook] io.undertow: stopping server: Undertow - 2.2.20.Final
+2024-04-18 09:00:05,649 INFO [SpringApplicationShutdownHook] io.undertow.servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-18 09:00:05,834 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown initiated...
+2024-04-18 09:00:05,854 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown completed.
+2024-04-18 09:00:05,861 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Shutting down DiscoveryClient ...
+2024-04-18 09:00:05,875 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Completed shut down of DiscoveryClient
+2024-04-18 09:00:14,971 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 09:00:14,994 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 42528 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 09:00:14,995 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 09:00:16,163 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 09:00:16,352 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 09:00:16,354 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 09:00:16,387 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2024-04-18 09:00:16,742 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 09:00:17,123 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 09:00:17,136 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 09:00:17,136 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1922 ms
+2024-04-18 09:00:17,245 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 09:00:17,246 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 09:00:17,254 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2bd2430f
+2024-04-18 09:00:19,098 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 09:00:19,977 INFO [main] o.s.b.actuate.endpoint.web.EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-18 09:00:20,058 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 09:00:20,059 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 09:00:20,357 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-04-18 09:00:20,358 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-04-18 09:00:20,358 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-04-18 09:00:20,359 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear EntityHelper entityTableMap cache.
+2024-04-18 09:00:20,656 WARN [main] o.s.b.a.freemarker.FreeMarkerAutoConfiguration: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2024-04-18 09:00:21,891 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 09:00:21,962 INFO [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-18 09:00:22,026 WARN [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-18 09:00:22,143 INFO [main] o.s.cloud.netflix.eureka.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-18 09:00:22,161 INFO [main] com.netflix.discovery.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-18 09:00:22,161 INFO [main] com.netflix.discovery.DiscoveryClient: Client configured to neither register nor query for data.
+2024-04-18 09:00:22,165 INFO [main] com.netflix.discovery.DiscoveryClient: Discovery Client initialized at timestamp 1713402022164 with initial instances count: 0
+2024-04-18 09:00:22,171 INFO [main] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Registering application LONG-SVC with eureka with status UP
+2024-04-18 09:00:22,183 INFO [main] org.xnio: XNIO version 3.8.7.Final
+2024-04-18 09:00:22,187 INFO [main] org.xnio.nio: XNIO NIO Implementation Version 3.8.7.Final
+2024-04-18 09:00:22,204 INFO [main] org.jboss.threads: JBoss Threads version 3.1.0.Final
+2024-04-18 09:00:22,226 INFO [main] io.undertow: starting server: Undertow - 2.2.20.Final
+2024-04-18 09:00:22,252 INFO [main] o.s.boot.web.embedded.undertow.UndertowWebServer: Undertow started on port(s) 1001 (http)
+2024-04-18 09:00:22,253 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration: Updating port to 1001
+2024-04-18 09:00:23,260 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 09:00:23,589 INFO [main] com.jt.www.CtiApplication: Started CtiApplication in 10.282 seconds (JVM running for 10.974)
+2024-04-18 09:00:24,263 INFO [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 09:00:24,265 INFO [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Starting...
+2024-04-18 09:00:24,265 INFO [RMI TCP Connection(3)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-18 09:00:24,272 INFO [RMI TCP Connection(3)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Completed initialization in 7 ms
+2024-04-18 09:00:24,409 INFO [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Start completed.
+2024-04-18 09:00:34,711 WARN [boundedElastic-1] o.s.b.actuate.redis.RedisReactiveHealthIndicator: Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoSubscribeOnCallable] :
+	reactor.core.publisher.Mono.subscribeOn(Mono.java:4554)
+	org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+Error has been observed at the following site(s):
+	*__Mono.subscribeOn ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+	|_     Mono.flatMap ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.doHealthCheck(RedisReactiveHealthIndicator.java:52)
+Original Stack Trace:
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+		at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+		at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+		at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+		at java.util.concurrent.FutureTask.run(FutureTask.java)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.MonoCallableOnAssembly.call(MonoCallableOnAssembly.java:91)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:70)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:571)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:298)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:223)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 18 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /172.24.128.5:6379
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe$2.run(AbstractKQueueChannel.java:563)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:295)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-04-18 09:00:34,716 WARN [RMI TCP Connection(1)-127.0.0.1] o.s.boot.actuate.health.HealthEndpointSupport: Health contributor org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration$AdaptedReactiveHealthContributors$1 (redis) took 10276ms to respond
+2024-04-18 09:05:07,591 INFO [SpringApplicationShutdownHook] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Unregistering application LONG-SVC with eureka with status DOWN
+2024-04-18 09:05:07,602 INFO [SpringApplicationShutdownHook] io.undertow: stopping server: Undertow - 2.2.20.Final
+2024-04-18 09:05:07,605 INFO [SpringApplicationShutdownHook] io.undertow.servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-18 09:05:07,770 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown initiated...
+2024-04-18 09:05:07,785 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown completed.
+2024-04-18 09:05:07,788 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Shutting down DiscoveryClient ...
+2024-04-18 09:05:07,805 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Completed shut down of DiscoveryClient
+2024-04-18 09:05:16,075 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 09:05:16,095 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 42601 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 09:05:16,096 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 09:05:17,351 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 09:05:17,529 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 09:05:17,531 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 09:05:17,560 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2024-04-18 09:05:17,923 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 09:05:18,364 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 09:05:18,380 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 09:05:18,381 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2042 ms
+2024-04-18 09:05:18,473 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 09:05:18,473 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 09:05:18,478 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2bd2430f
+2024-04-18 09:05:20,338 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 09:05:21,169 INFO [main] o.s.b.actuate.endpoint.web.EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-18 09:05:21,247 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 09:05:21,247 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 09:05:21,544 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-04-18 09:05:21,545 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-04-18 09:05:21,546 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-04-18 09:05:21,546 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear EntityHelper entityTableMap cache.
+2024-04-18 09:05:21,881 WARN [main] o.s.b.a.freemarker.FreeMarkerAutoConfiguration: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2024-04-18 09:05:23,113 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 09:05:23,171 INFO [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-18 09:05:23,235 WARN [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-18 09:05:23,348 INFO [main] o.s.cloud.netflix.eureka.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-18 09:05:23,366 INFO [main] com.netflix.discovery.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-18 09:05:23,367 INFO [main] com.netflix.discovery.DiscoveryClient: Client configured to neither register nor query for data.
+2024-04-18 09:05:23,370 INFO [main] com.netflix.discovery.DiscoveryClient: Discovery Client initialized at timestamp 1713402323370 with initial instances count: 0
+2024-04-18 09:05:23,376 INFO [main] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Registering application LONG-SVC with eureka with status UP
+2024-04-18 09:05:23,387 INFO [main] org.xnio: XNIO version 3.8.7.Final
+2024-04-18 09:05:23,391 INFO [main] org.xnio.nio: XNIO NIO Implementation Version 3.8.7.Final
+2024-04-18 09:05:23,409 INFO [main] org.jboss.threads: JBoss Threads version 3.1.0.Final
+2024-04-18 09:05:23,430 INFO [main] io.undertow: starting server: Undertow - 2.2.20.Final
+2024-04-18 09:05:23,457 INFO [main] o.s.boot.web.embedded.undertow.UndertowWebServer: Undertow started on port(s) 1001 (http)
+2024-04-18 09:05:23,458 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration: Updating port to 1001
+2024-04-18 09:05:24,453 INFO [XNIO-2 task-1] io.undertow.servlet: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 09:05:24,454 INFO [XNIO-2 task-1] o.springframework.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-18 09:05:24,458 INFO [XNIO-2 task-1] o.springframework.web.servlet.DispatcherServlet: Completed initialization in 4 ms
+2024-04-18 09:05:24,464 INFO [main] org.springframework.cloud.commons.util.InetUtils: Cannot determine local hostname
+2024-04-18 09:05:24,876 INFO [main] com.jt.www.CtiApplication: Started CtiApplication in 10.493 seconds (JVM running for 11.161)
+2024-04-18 09:05:25,414 INFO [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Starting...
+2024-04-18 09:05:25,530 INFO [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Start completed.
+2024-04-18 09:05:35,831 WARN [boundedElastic-1] o.s.b.actuate.redis.RedisReactiveHealthIndicator: Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoSubscribeOnCallable] :
+	reactor.core.publisher.Mono.subscribeOn(Mono.java:4554)
+	org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+Error has been observed at the following site(s):
+	*__Mono.subscribeOn ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+	|_     Mono.flatMap ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.doHealthCheck(RedisReactiveHealthIndicator.java:52)
+Original Stack Trace:
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+		at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+		at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+		at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+		at java.util.concurrent.FutureTask.run(FutureTask.java)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.MonoCallableOnAssembly.call(MonoCallableOnAssembly.java:91)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:70)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:571)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:298)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:223)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 18 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /172.24.128.5:6379
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe$2.run(AbstractKQueueChannel.java:563)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:295)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-04-18 09:05:35,838 WARN [RMI TCP Connection(2)-127.0.0.1] o.s.boot.actuate.health.HealthEndpointSupport: Health contributor org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration$AdaptedReactiveHealthContributors$1 (redis) took 10285ms to respond
+2024-04-18 11:15:40,135 INFO [SpringApplicationShutdownHook] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Unregistering application LONG-SVC with eureka with status DOWN
+2024-04-18 11:15:40,150 INFO [SpringApplicationShutdownHook] io.undertow: stopping server: Undertow - 2.2.20.Final
+2024-04-18 11:15:40,160 INFO [SpringApplicationShutdownHook] io.undertow.servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-18 11:15:40,327 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown initiated...
+2024-04-18 11:15:40,343 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown completed.
+2024-04-18 11:15:40,351 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Shutting down DiscoveryClient ...
+2024-04-18 11:15:40,363 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Completed shut down of DiscoveryClient
+2024-04-18 11:22:21,614 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 11:22:21,637 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 47386 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 11:22:21,638 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 11:22:22,889 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 11:22:23,056 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 11:22:23,058 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 11:22:23,091 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-04-18 11:22:23,481 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 11:22:23,896 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 11:22:23,910 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 11:22:23,910 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2052 ms
+2024-04-18 11:22:23,995 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 11:22:23,995 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 11:22:24,001 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@23708f14
+2024-04-18 11:22:24,475 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.jt.www.service.local.app.UserAccountSecurityService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2024-04-18 11:22:24,495 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 11:22:24,512 ERROR [main] o.s.b.diagnostics.LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.jt.www.service.local.app.UserAccountSecurityService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jt.www.service.local.app.UserAccountSecurityService' in your configuration.
+
+2024-04-18 11:35:01,756 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 11:35:01,777 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 47702 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 11:35:01,778 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 11:35:02,985 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 11:35:03,142 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 11:35:03,144 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 11:35:03,177 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-04-18 11:35:03,546 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 11:35:03,913 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 11:35:03,925 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 11:35:03,926 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1931 ms
+2024-04-18 11:35:03,998 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 11:35:03,999 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 11:35:04,004 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6a552721
+2024-04-18 11:35:04,444 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.jt.www.service.local.app.UserAccountSecurityService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2024-04-18 11:35:04,476 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 11:35:04,518 ERROR [main] o.s.b.diagnostics.LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.jt.www.service.local.app.UserAccountSecurityService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jt.www.service.local.app.UserAccountSecurityService' in your configuration.
+
+2024-04-18 15:47:45,961 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 15:47:45,984 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 51509 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 15:47:45,985 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 15:47:47,225 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 15:47:47,422 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 15:47:47,424 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 15:47:47,458 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2024-04-18 15:47:47,830 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 15:47:48,214 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 15:47:48,228 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 15:47:48,228 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2007 ms
+2024-04-18 15:47:48,303 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 15:47:48,304 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 15:47:48,310 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@39ae6408
+2024-04-18 15:47:48,810 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2024-04-18 15:47:48,850 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 15:47:48,889 ERROR [main] o.s.b.diagnostics.LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' in your configuration.
+
+2024-04-18 15:48:17,262 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 15:48:17,289 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 51526 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 15:48:17,291 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 15:48:18,545 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 15:48:18,737 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 15:48:18,739 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 15:48:18,772 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2024-04-18 15:48:19,134 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 15:48:19,527 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 15:48:19,544 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 15:48:19,544 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2031 ms
+2024-04-18 15:48:19,628 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 15:48:19,628 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 15:48:19,634 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6cbbfe29
+2024-04-18 15:48:20,142 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2024-04-18 15:48:20,167 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 15:48:20,183 ERROR [main] o.s.b.diagnostics.LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' in your configuration.
+
+2024-04-18 15:48:47,259 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 15:48:47,277 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 51538 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 15:48:47,278 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 15:48:48,487 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 15:48:48,654 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 15:48:48,656 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 15:48:48,710 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+2024-04-18 15:48:49,121 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 15:48:49,527 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 15:48:49,540 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 15:48:49,541 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2014 ms
+2024-04-18 15:48:49,614 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 15:48:49,615 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 15:48:49,620 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4746fb8c
+2024-04-18 15:48:50,116 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userInfoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2024-04-18 15:48:50,144 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener: 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-04-18 15:48:50,159 ERROR [main] o.s.b.diagnostics.LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.jt.www.service.local.app.impl.UserAccountSecurityService' in your configuration.
+
+2024-04-18 15:49:53,316 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.6.Final
+2024-04-18 15:49:53,357 INFO [main] com.jt.www.CtiApplication: Starting CtiApplication using Java 1.8.0_341 on jianghailongdeMacBook-Pro.local with PID 51880 (/Users/jianghailong/WXShaderGardenAPI/target/classes started by jianghailong in /Users/jianghailong/WXShaderGardenAPI)
+2024-04-18 15:49:53,359 INFO [main] com.jt.www.CtiApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 15:49:54,772 WARN [main] org.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.jt.www]' package. Please check your configuration.
+2024-04-18 15:49:54,956 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-18 15:49:54,958 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-18 15:49:54,998 INFO [main] o.s.d.r.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+2024-04-18 15:49:55,416 INFO [main] o.s.cloud.context.scope.GenericScope: BeanFactory id=f312fece-a5d8-3f03-96ca-d2b679abcfd3
+2024-04-18 15:49:55,912 WARN [main] io.undertow.websockets.jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-04-18 15:49:55,933 INFO [main] io.undertow.servlet: Initializing Spring embedded WebApplicationContext
+2024-04-18 15:49:55,933 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2314 ms
+2024-04-18 15:49:56,049 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 15:49:56,050 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 15:49:56,059 INFO [main] com.netflix.config.DynamicPropertyFactory: DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@65da4a5d
+2024-04-18 15:50:01,515 INFO [main] o.s.b.actuate.endpoint.web.EndpointLinksResolver: Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-04-18 15:50:01,596 WARN [main] c.netflix.config.sources.URLConfigurationSource: No URLs will be polled as dynamic configuration sources.
+2024-04-18 15:50:01,597 INFO [main] c.netflix.config.sources.URLConfigurationSource: To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-04-18 15:50:01,786 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2024-04-18 15:50:01,787 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2024-04-18 15:50:01,787 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2024-04-18 15:50:01,787 INFO [main] t.m.mapper.autoconfigure.MapperCacheDisabler: Clear EntityHelper entityTableMap cache.
+2024-04-18 15:50:02,281 WARN [main] o.s.b.a.freemarker.FreeMarkerAutoConfiguration: Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.check-template-location=false)
+2024-04-18 15:50:02,340 INFO [main] o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-18 15:50:02,418 WARN [main] o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-18 15:50:02,539 INFO [main] o.s.cloud.netflix.eureka.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-18 15:50:02,558 INFO [main] com.netflix.discovery.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-18 15:50:02,559 INFO [main] com.netflix.discovery.DiscoveryClient: Client configured to neither register nor query for data.
+2024-04-18 15:50:02,563 INFO [main] com.netflix.discovery.DiscoveryClient: Discovery Client initialized at timestamp 1713426602562 with initial instances count: 0
+2024-04-18 15:50:02,567 INFO [main] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Registering application LONG-SVC with eureka with status UP
+2024-04-18 15:50:02,579 INFO [main] org.xnio: XNIO version 3.8.7.Final
+2024-04-18 15:50:02,584 INFO [main] org.xnio.nio: XNIO NIO Implementation Version 3.8.7.Final
+2024-04-18 15:50:02,602 INFO [main] org.jboss.threads: JBoss Threads version 3.1.0.Final
+2024-04-18 15:50:02,621 INFO [main] io.undertow: starting server: Undertow - 2.2.20.Final
+2024-04-18 15:50:02,649 INFO [main] o.s.boot.web.embedded.undertow.UndertowWebServer: Undertow started on port(s) 1001 (http)
+2024-04-18 15:50:02,650 INFO [main] o.s.c.n.e.s.EurekaAutoServiceRegistration: Updating port to 1001
+2024-04-18 15:50:02,945 INFO [main] com.jt.www.CtiApplication: Started CtiApplication in 10.43 seconds (JVM running for 11.22)
+2024-04-18 15:50:03,481 INFO [RMI TCP Connection(9)-127.0.0.1] io.undertow.servlet: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 15:50:03,482 INFO [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Starting...
+2024-04-18 15:50:03,483 INFO [RMI TCP Connection(9)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-18 15:50:03,487 INFO [RMI TCP Connection(9)-127.0.0.1] o.springframework.web.servlet.DispatcherServlet: Completed initialization in 4 ms
+2024-04-18 15:50:03,629 INFO [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource: dbcp1 - Start completed.
+2024-04-18 15:50:13,944 WARN [boundedElastic-1] o.s.b.actuate.redis.RedisReactiveHealthIndicator: Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoSubscribeOnCallable] :
+	reactor.core.publisher.Mono.subscribeOn(Mono.java:4554)
+	org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+Error has been observed at the following site(s):
+	*__Mono.subscribeOn ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.getConnection(RedisReactiveHealthIndicator.java:57)
+	|_     Mono.flatMap ⇢ at org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator.doHealthCheck(RedisReactiveHealthIndicator.java:52)
+Original Stack Trace:
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1689)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1597)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+		at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+		at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+		at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+		at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+		at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+		at java.util.concurrent.FutureTask.run(FutureTask.java)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+		at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:109)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1595)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1383)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1366)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:1117)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:509)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:103)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:86)
+	at reactor.core.publisher.MonoCallableOnAssembly.call(MonoCallableOnAssembly.java:91)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:227)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 172.24.128.5:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:330)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$null$0(LettucePoolingConnectionProvider.java:97)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:70)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:571)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:298)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:223)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:103)
+	... 18 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /172.24.128.5:6379
+	at io.netty.channel.kqueue.AbstractKQueueChannel$AbstractKQueueUnsafe$2.run(AbstractKQueueChannel.java:563)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask$$$capture(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:295)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-04-18 15:50:13,950 WARN [RMI TCP Connection(8)-127.0.0.1] o.s.boot.actuate.health.HealthEndpointSupport: Health contributor org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration$AdaptedReactiveHealthContributors$1 (redis) took 10287ms to respond
+2024-04-18 15:50:29,327 INFO [SpringApplicationShutdownHook] o.s.c.n.e.serviceregistry.EurekaServiceRegistry: Unregistering application LONG-SVC with eureka with status DOWN
+2024-04-18 15:50:29,334 INFO [SpringApplicationShutdownHook] io.undertow: stopping server: Undertow - 2.2.20.Final
+2024-04-18 15:50:29,341 INFO [SpringApplicationShutdownHook] io.undertow.servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-18 15:50:29,501 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown initiated...
+2024-04-18 15:50:29,515 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: dbcp1 - Shutdown completed.
+2024-04-18 15:50:29,520 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Shutting down DiscoveryClient ...
+2024-04-18 15:50:29,531 INFO [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient: Completed shut down of DiscoveryClient

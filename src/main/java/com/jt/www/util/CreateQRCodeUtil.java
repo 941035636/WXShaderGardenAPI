@@ -9,9 +9,7 @@ import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 
 /**
- * @Author: Sy
  * @Date: 2023/3/1 10:37
- * @Version 1.0
  */
 public class CreateQRCodeUtil {
 

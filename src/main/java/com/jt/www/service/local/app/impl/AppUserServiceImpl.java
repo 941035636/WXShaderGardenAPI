@@ -30,7 +30,11 @@ public class AppUserServiceImpl implements AppUserService {
     }
 
     public AppUserEntity loginUser(LoginUserParam loginUserParam) {
-
+        if(loginUserParam.getUsername() == null || loginUserParam.getUsername().isEmpty()){
+            throw new BizException("请输入用户名");
+        }else if(loginUserParam.getPasswordCode() == null || loginUserParam.getPasswordCode().isEmpty()){
+            throw new BizException("请输入用户密码");
+        }
         Example example = new Example(AppUserEntity.class);
         example.createCriteria().andEqualTo("username",loginUserParam.getUsername()).andEqualTo("passwordCode",loginUserParam.getPasswordCode());
         //selectByExample查询
